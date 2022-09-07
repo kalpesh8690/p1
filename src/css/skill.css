@@ -1,0 +1,187 @@
+.skill-main{
+    position: relative;
+    
+    
+}
+.skill-title-main{
+    
+    margin-top: 10px;
+    text-align: center;
+}
+.skill-name-p{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.skill-name-span{
+    color: orange;
+}
+.skill-card-main{
+    margin-top: 50px;
+    position:relative;
+    display: inline-flex;
+    flex-wrap:wrap;
+    
+    justify-content: center;
+    
+    
+    
+    
+    
+   
+    
+}
+.skill-card{
+    display: inline-block;
+    
+    
+    position: relative;
+    margin: 0px;
+    gap: 0px;
+    
+    
+}
+.skill-name{
+    position: relative;
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+.skill-logo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 150px;
+    width: auto;
+    
+    
+}
+.skill-logo-img{
+    max-width: 120px;
+    height: 80px;
+    
+    
+}
+.progress-main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+.codeslash{
+    position: relative;
+    bottom: 6px;
+    margin-right: 5px;
+    margin-top: 0;
+    padding: 0;
+}
+.prg-pr{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 0;
+    top: -15px;
+    border-radius: 50px;
+    border: rgb(255, 0, 0) solid 5px;
+}
+.pr-bar{
+    width: 300px;
+    height: 1px;
+    
+}
+
+
+@media (max-width:768px) {
+    .skill-main{
+        position: relative;
+        width: auto;
+        margin-top: 0;
+        
+    }
+    .skill-title-main{
+        margin-top: -250px;
+        width: auto;
+        text-align: center;
+    }
+    .skill-name-p{
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+    .skill-name-span{
+        color: orange;
+    }
+    .skill-card-main{
+        margin-top: 20px;
+        position:relative;
+        display: block;
+        flex-wrap:unset;
+        justify-content: unset;
+        
+        
+        
+        
+       
+        
+    }
+    .skill-card{
+        display: block;
+        position: relative;
+        margin: 100px;
+        gap: 20px;
+        
+        
+    }
+    .skill-name{
+        position: relative;
+        display: flex;
+        margin-top: 50px;
+        justify-content: center;
+    }
+    .skill-logo{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .skill-logo-img{
+        max-width: 100px;
+    }
+    .progress-main{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: auto;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .pr-bar{
+        width: 800px;
+        height: 2px;
+    }
+    .codeslash{
+        position: relative;
+        width:100px;
+        bottom: 6px;
+        margin-right: 5px;
+        margin-top: 0;
+        padding: 0;
+    }
+    .prg-pr{
+        position: relative;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+        margin-top: 0;
+        top: -15px;
+        border-radius: 50px;
+        border: rgb(255, 0, 0) solid 5px;
+    }
+    
+}

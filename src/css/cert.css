@@ -1,0 +1,486 @@
+.edu-main{
+position: relative;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+.cert-items-con{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+}
+
+.c-p{
+    margin-top: 30px;
+    
+}
+
+.to{
+    font-size: 15px;
+}
+.of{
+    color:orange
+}
+.u-case{
+    text-transform: uppercase;
+}
+.s-20{
+    font-size: 20px;
+}
+.cert-head-main{
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.cert-head-main::before{
+   position: relative;
+   margin-top: 50px;
+   content: "";
+   background-color: rgb(255, 128, 0);
+   width: 100px;
+   height: 5px;
+}
+.cert-head-main::after{
+    position: relative;
+    margin-top: 50px;
+    content: "";
+    background-color: rgb(255, 128, 0);
+    width: 100px;
+    height: 5px;
+ }
+.cert-detail-main{
+    width: 1200px;
+    margin-left: 100px;
+}
+.cert-logo{
+    width: 500px;
+    margin-top: 100px;
+}
+.cert-main{
+    position: relative;
+    display: flex;
+}
+.cert-by{
+    font-size: 50px;
+}
+.cert-solo-main{
+    position: relative;
+    display: flex;
+    gap:100px;
+    
+}
+.m-cert-solo{
+    margin: 20px;
+    text-align: center;
+    position: relative;
+    border: transparent solid 2px;
+    max-width: 250px;
+    min-width: 250px;
+}
+.m-cert-solo:hover{
+    border: transparent solid 2px;
+    background-color: rgb(35, 35, 35);
+    color: aliceblue;
+    border:transparent solid 2px
+}
+.cert-name{
+    margin: 20px;
+}
+.cert-logos{
+    width:100px;
+}
+.m-cert-link-btn{
+    position: relative;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    max-width: 120px;
+    min-width: 120px;
+    height: 2vh;
+    margin-left: 3.5rem;
+    box-shadow: 2px 2px 5px rgb(63, 63, 63);
+    background-color: rgb(114, 63, 209);
+    border: black solid 1px;
+    font-size: 16px;
+   
+    
+    
+    
+    
+}
+.m-cert-link-btn:hover{
+    box-shadow: -2px -2px 2px inset rgb(63, 63, 63),2px 2px 2px inset rgb(63, 63, 63);
+    font-size: 15px;
+    border: black inset 1px;
+    
+}
+
+.m-cert-data{
+    position: relative;
+    margin: 20px;
+    line-height: 30px;
+}
+.l-2{
+    letter-spacing:2px ;
+}
+.type-fix{
+    text-overflow: clip;
+    text-align:start;
+    line-height: 30px;
+}
+.loading-main{
+    position: relative;
+    display: block;
+    justify-content: center;
+    height: 20rem;
+    margin-top: 5rem;
+}
+.loading-style{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 20rem;
+    
+    margin:200px;
+}
+.lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+  }
+  .lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: orangered;
+    margin: -4px 0 0 -4px;
+  }
+  .lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+  }
+  .lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+  }
+  .lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+  }
+  .lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+  }
+  .lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+  }
+  .lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+  }
+  .lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+  }
+  .lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+  }
+  .lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+  }
+  .lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+  }
+  .lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+  }
+  .lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+  }
+  .lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+  }
+  .lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+  }
+  .lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+  }
+  .lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+  }
+  @keyframes lds-roller {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+@media (max-width:768px) {
+    .edu-main{
+        position: relative;
+       
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: auto;
+        }
+        .edu-title-main{
+            margin-top: 20px;
+            
+            width: auto;
+        }
+        .edu-name-p{
+            font-size: 40px;
+            text-transform: uppercase;
+            width: auto;
+        }
+      
+        .edu-name-span{
+            color: orange;
+        }
+        .uni-main{
+            position: relative;
+            display: inline-block;
+        }
+        .uni-logo{
+            width: 100px;
+            height: 100px;
+            
+            
+        }
+        .uni-name{
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: bolder;
+            margin-top: 10px;
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 2px 3px black;
+        }
+        .uni-name-span{
+            color: rgb(132, 0, 0);
+           
+            
+        }
+        .uni-con{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        .clg-con{
+            margin-top: 30px;
+            position: relative;
+            display: flex;
+            margin-left: 10px;
+            justify-content: center;
+            
+            
+            
+            width: auto;
+            
+            top:45px
+            
+        }
+        
+        .clg-name{
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: bolder;
+            margin-top: 10px;
+            margin-left: 0;
+            color:black;
+           
+            
+        }
+       
+        .course-main{
+            position: relative;
+          
+           display: inline-block;
+           
+            margin: 20px;
+           
+        }
+        .course-detail{
+            position: relative;
+            width: auto;
+            justify-content: center;
+            text-align: center;
+          
+            
+        }
+        .c-p{
+            margin-top: 30px;
+            
+        }
+        .course{
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        .date{
+            font-size: 20px;
+        }
+        .to{
+            font-size: 15px;
+        }
+        .of{
+            color:orange
+        }
+        .u-case{
+            text-transform: uppercase;
+        }
+        .edu-card{
+            width: auto;
+            display: inline-block;
+            position: relative;
+        }
+        .s-20{
+            font-size: 20px;
+        }
+        .sololearn-logo{
+            margin-top: 15px;
+            margin-left: 10px;
+            width:200px;
+            height: auto;
+        }
+        .edu-logo-main{
+            display: flex;
+            justify-content: center;
+            width: auto;
+        }
+        .edu-logo{
+            width: 300px;
+            margin-top: 20px;
+            
+        }
+        .cert-head-main{
+            position: relative;
+            width: auto;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: unset;
+            line-height: 20px;
+        }
+        .cert-detail-main{
+            display: inline-block;
+            margin-top: -20px;
+            width: auto;
+            margin-left: 0;
+            
+        }
+        .edu-name-p::before{
+            display: inline-block;
+            margin: 0 20px 8px 0;
+            height: 5px;
+            content: " ";
+            text-shadow: none;
+            background-color: rgb(0, 0, 0);
+            width: 30px;
+        }
+        .edu-name-p::after{
+            display: inline-block;
+            margin: 0 0 8px 20px;
+            height: 5px;
+            content: " ";
+            text-shadow: none;
+            background-color: rgb(0, 0, 0);
+            width: 30px;
+        }
+        .cert-logo-con{
+            position: relative;
+            width: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .cert-logo{
+            width: 100px;
+            
+            margin-top: 30px;
+        }
+        .cert-main{
+            position: relative;
+            display: inline-block;
+            width: auto;
+        }
+        .cert-by{
+            font-size: 40px;
+            position: relative;
+            display: inline-block;
+            justify-content: center;
+            text-align: center;
+            word-spacing: 2px;
+        }
+        .cert-solo-main{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            
+        }
+        .cert-solo{
+            margin: unset;
+            text-align: center;
+            margin-left: unset;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            
+        }
+        .cert-name{
+            margin: 20px;
+        }
+        .cert-logos{
+            width:100px;
+        }
+        .cert-link-btn{
+            position: relative;
+            
+            background-color:transparent;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 20px;
+            border: green solid 2px;
+        }
+        .cert-data{
+            position: relative;
+            margin: 20px;
+        }
+        .l-2{
+            letter-spacing:2px ;
+        }
+        .type-fix{
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            
+            line-height: 30px;
+            width: auto;
+            height: auto;
+        }
+    
+}

@@ -1,0 +1,432 @@
+.edu-main{
+position: relative;
+margin-top: 200px;
+margin-bottom: 200px;
+}
+.edu-title-main{
+    margin-top: 200px;
+    justify-content: center;
+    text-align: center;
+}
+.edu-name-p{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.edu-name-p::before{
+    display: inline-block;
+    margin: 0 20px 8px 0;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: rgb(0, 0, 0);
+    width: 400px;
+}
+.edu-name-p::after{
+    display: inline-block;
+    margin: 0 0 8px 20px;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: rgb(0, 0, 0);
+    width: 400px;
+}
+.edu-name-span{
+    color: orange;
+}
+.uni-main{
+    position: relative;
+}
+.uni-logo{
+    width: 60px;
+    display: flex;
+}
+.uni-name{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 3px black;
+}
+.uni-name-span{
+    color: rgb(132, 0, 0);
+   
+    
+}
+.uni-con{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.clg-con{
+    margin-top: 30px;
+    position: relative;
+    display: inline-flex;
+    margin-left: 150px;
+    top:45px
+    
+}
+
+.clg-name{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 10px;
+    color:black;
+   
+    
+}
+
+.course-main{
+    position: relative;
+  
+   display: flex;
+   
+    margin: 20px;
+   
+}
+.course-detail{
+    position: relative;
+    width: 2000px;
+    justify-content: center;
+    text-align: center;
+  
+    
+}
+.c-p{
+    margin-top: 30px;
+    
+}
+.course{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.date{
+    font-size: 20px;
+}
+.to{
+    font-size: 15px;
+}
+.of{
+    color:orange
+}
+.u-case{
+    text-transform: uppercase;
+}
+.edu-card{
+    
+}
+.s-20{
+    font-size: 20px;
+}
+.sololearn-logo{
+    margin-top: 20px;
+    margin-left: 10px;
+    width:300px;
+    height: 60px;
+}
+.edu-logo{
+    width: 600px;
+    margin-top: -100px;
+}
+.cert-head-main{
+    position: relative;
+    display: flex;
+}
+.cert-detail-main{
+    width: 1200px;
+    margin-left: 100px;
+}
+.cert-logo{
+    width: 500px;
+    margin-top: 100px;
+}
+.cert-main{
+    position: relative;
+    display: flex;
+}
+.cert-by{
+    font-size: 50px;
+}
+.cert-solo-main{
+    position: relative;
+    display: flex;
+    gap:100px;
+    
+}
+.cert-solo{
+    margin: 20px;
+    text-align: center;
+    margin-left: 80px;
+}
+.cert-name{
+    margin: 20px;
+}
+.cert-logos{
+    width:100px;
+}
+.cert-link-btn{
+    position: relative;
+    
+    background-color:transparent;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: green solid 2px;
+}
+.cert-data{
+    position: relative;
+    margin: 20px;
+}
+.l-2{
+    letter-spacing:2px ;
+}
+.type-fix{
+    text-overflow: clip;
+    text-align:start;
+    line-height: 30px;
+}
+
+@media (max-width:768px) {
+    .edu-main{
+        position: relative;
+       
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: auto;
+        }
+        .edu-title-main{
+            margin-top: 20px;
+            
+            width: auto;
+        }
+        .edu-name-p{
+            font-size: 40px;
+            text-transform: uppercase;
+            width: auto;
+        }
+      
+        .edu-name-span{
+            color: orange;
+        }
+        .uni-main{
+            position: relative;
+            display: inline-block;
+        }
+        .uni-logo{
+            width: 100px;
+            height: 100px;
+            
+            
+        }
+        .uni-name{
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: bolder;
+            margin-top: 10px;
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 2px 3px black;
+        }
+        .uni-name-span{
+            color: rgb(132, 0, 0);
+           
+            
+        }
+        .uni-con{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        .clg-con{
+            margin-top: 30px;
+            position: relative;
+            display: flex;
+            margin-left: 10px;
+            justify-content: center;
+            
+            
+            
+            width: auto;
+            
+            top:45px
+            
+        }
+        
+        .clg-name{
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: bolder;
+            margin-top: 10px;
+            margin-left: 0;
+            color:black;
+           
+            
+        }
+       
+        .course-main{
+            position: relative;
+          
+           display: inline-block;
+           
+            margin: 20px;
+           
+        }
+        .course-detail{
+            position: relative;
+            width: auto;
+            justify-content: center;
+            text-align: center;
+          
+            
+        }
+        .c-p{
+            margin-top: 30px;
+            
+        }
+        .course{
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        .date{
+            font-size: 20px;
+        }
+        .to{
+            font-size: 15px;
+        }
+        .of{
+            color:orange
+        }
+        .u-case{
+            text-transform: uppercase;
+        }
+        .edu-card{
+            width: auto;
+            display: inline-block;
+            position: relative;
+        }
+        .s-20{
+            font-size: 20px;
+        }
+        .sololearn-logo{
+            margin-top: 15px;
+            margin-left: 10px;
+            width:200px;
+            height: auto;
+        }
+        .edu-logo-main{
+            display: flex;
+            justify-content: center;
+            width: auto;
+        }
+        .edu-logo{
+            width: 300px;
+            margin-top: 20px;
+            
+        }
+        .cert-head-main{
+            position: relative;
+            width: auto;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: unset;
+            line-height: 20px;
+        }
+        .cert-detail-main{
+            display: inline-block;
+            margin-top: -20px;
+            width: auto;
+            margin-left: 0;
+            
+        }
+        .edu-name-p::before{
+            display: inline-block;
+            margin: 0 20px 8px 0;
+            height: 5px;
+            content: " ";
+            text-shadow: none;
+            background-color: rgb(0, 0, 0);
+            width: 30px;
+        }
+        .edu-name-p::after{
+            display: inline-block;
+            margin: 0 0 8px 20px;
+            height: 5px;
+            content: " ";
+            text-shadow: none;
+            background-color: rgb(0, 0, 0);
+            width: 30px;
+        }
+        .cert-logo-con{
+            position: relative;
+            width: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .cert-logo{
+            width: 100px;
+            
+            margin-top: 30px;
+        }
+        .cert-main{
+            position: relative;
+            display: inline-block;
+            width: auto;
+        }
+        .cert-by{
+            font-size: 40px;
+            position: relative;
+            display: inline-block;
+            justify-content: center;
+            text-align: center;
+            word-spacing: 2px;
+        }
+        .cert-solo-main{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            
+        }
+        .cert-solo{
+            margin: unset;
+            text-align: center;
+            margin-left: unset;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            
+        }
+        .cert-name{
+            margin: 20px;
+        }
+        .cert-logos{
+            width:100px;
+        }
+        .cert-link-btn{
+            position: relative;
+            
+            background-color:transparent;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 20px;
+            border: green solid 2px;
+        }
+        .cert-data{
+            position: relative;
+            margin: 20px;
+        }
+        .l-2{
+            letter-spacing:2px ;
+        }
+        .type-fix{
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            
+            line-height: 30px;
+            width: auto;
+            height: auto;
+        }
+    
+}
