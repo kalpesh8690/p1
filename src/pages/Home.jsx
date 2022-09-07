@@ -10,8 +10,8 @@ function Home() {
           <h1 className='h1-desc'>I AM <span style={{color:'orange'}}>KALPESH CHAUHAN</span></h1>
           <p className='p-desc2'>JUNIOR REACT JS DEVLOPER</p>
           <div className='home-btns'>
-          <a className='btn-1' href='' >Hire Me</a>
-          <a className='btn-2' >My CV</a>
+          <a className='btn-1' href='' >Contact ME</a>
+          <a className='btn-2' href='https://resume.io/r/nIYKL0kzE' >My CV</a>
         </div>
         </div>
         <div className='shadow'>
