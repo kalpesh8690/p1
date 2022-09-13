@@ -1,4 +1,6 @@
 import React from 'react'
+import "animate.css/animate.min.css";
+import ScrollAnimation from "@stromsky/react-animate-on-scroll"
 import '../css/home.css'
 
 function Home() {
@@ -20,6 +22,9 @@ function Home() {
         
 
       </div>
+      <ScrollAnimation 
+        animateIn="fadeIn"
+        >
       <div className='about-us-main'>
         <div className='about-us-img'>
         <img className='about-img' alt="about-pic" src='about-us.png'></img>
@@ -32,6 +37,7 @@ function Home() {
           </div>
         </div>
       </div>
+      </ScrollAnimation>
     </>
   )
 }
