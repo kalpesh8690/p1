@@ -32,8 +32,8 @@ useEffect(()=>{
           <Route path='/skill' element={<Skill />} />
           <Route path='/education' element={<Education />} />
           <Route path='/about' element={<About />} />
-          <Route path='/contact' element={<Contact />} />
         </Route>
+        <Route path='/contact' element={<Contact />} />
         <Route path='/cert' element={<Certificate/>}/>
       </Routes>}
       

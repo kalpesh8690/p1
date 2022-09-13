@@ -10,19 +10,19 @@ function Home() {
           <h1 className='h1-desc'>I AM <span style={{color:'orange'}}>KALPESH CHAUHAN</span></h1>
           <p className='p-desc2'>JUNIOR REACT JS DEVLOPER</p>
           <div className='home-btns'>
-          <a className='btn-1' href='' >Contact ME</a>
+          <a className='btn-1' href='./contact' >Contact ME</a>
           <a className='btn-2' href='https://resume.io/r/nIYKL0kzE' >My CV</a>
         </div>
         </div>
         <div className='shadow'>
-          <img className='my-img' src='mypic.png'></img>
+          <img className='my-img' alt="kalpesh-pic" src='mypic.png'></img>
         </div>
         
 
       </div>
       <div className='about-us-main'>
         <div className='about-us-img'>
-        <img className='about-img' src='about-us.png'></img>
+        <img className='about-img' alt="about-pic" src='about-us.png'></img>
         </div>
         <div className='about-us-detail'>
           <h1 className='mt-2'>LET’S INTRODUCE ABOUT MYSELF</h1>
