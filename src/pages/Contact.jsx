@@ -1,30 +1,18 @@
 import React,{useState} from "react";
-import {
-  Instagram,
-  GitHub,
-  LinkedIn,
-  Facebook,
-  WhatsApp
-} from "@mui/icons-material";
+import {Gh,In,Ld,Wp,Fb} from '../styled/styled'
 import "../css/contact.css";
 import { Input,Box, Button } from "@mui/material";
 import emailjs from '@emailjs/browser';
 
-
-
-
-
 function Contact() {
 
   const[formdata,setFormdata]=useState([]);
-
   const [fname,setFname]=useState('');
   const [lname,setLname]=useState('');
   const [email,setEmail]=useState('');
   const [mobile,setMobile]=useState('');
   const [massage,setMassage]=useState('');
-  
-  
+
   const ContactForm=(()=>{
     var data={
       'firstname':fname,
@@ -42,9 +30,7 @@ function Contact() {
        console.log('FAILED...', error);
     });
   })
-  
-
- 
+   
   return (
     <>
       <div>
@@ -58,18 +44,9 @@ function Contact() {
                 style={{ margin: "10px" }}
                 href="https://www.instagram.com/mrk._09/"
               >
-                <Instagram 
-                  sx={{ fontSize: "100px", color: "rgb(255, 0, 149)" }}
-                />
+                <In/>
               </a>
-              <p
-                style={{
-                  fontSize: "20px",
-                  fontFamily: "sans-serif",
-                  fontWeight: "bold",
-                  marginTop: "-5px",
-                }}
-              >
+              <p className="icon-desc">
                 Instagram
               </p>
             </div>
@@ -78,16 +55,9 @@ function Contact() {
                 style={{ margin: "10px" }}
                 href="https://github.com/kalpesh8690"
               >
-                <GitHub sx={{ fontSize: "100px", color: "black" }} />
+                <Gh/> 
               </a>
-              <p
-                style={{
-                  fontSize: "20px",
-                  fontFamily: "sans-serif",
-                  fontWeight: "bold",
-                  marginTop: "-5px",
-                }}
-              >
+              <p className="icon-desc">
                 Github
               </p>
             </div>
@@ -96,18 +66,10 @@ function Contact() {
                 style={{ margin: "10px" }}
                 href="https://www.linkedin.com/in/kalpesh-chauhan-07632b194/?originalSubdomain=in"
               >
-                <LinkedIn
-                  sx={{ fontSize: "100px", color: "rgb(17, 0, 124)" }}
-                />
+                <Ld/>
+                
               </a>
-              <p
-                style={{
-                  fontSize: "20px",
-                  fontFamily: "sans-serif",
-                  fontWeight: "bold",
-                  marginTop: "-5px",
-                }}
-              >
+              <p className="icon-desc">
                 Linkedin
               </p>
             </div>
@@ -116,16 +78,9 @@ function Contact() {
                 style={{ margin: "10px" }}
                 href="https://www.instagram.com/mrk._09/"
               >
-                <Facebook sx={{ fontSize: "100px", color: "blue" }} />
+                <Fb/>
               </a>
-              <p
-                style={{
-                  fontSize: "20px",
-                  fontFamily: "sans-serif",
-                  fontWeight: "bold",
-                  marginTop: "-5px",
-                }}
-              >
+              <p className="icon-desc">
                 Facebook
               </p>
             </div>
@@ -134,16 +89,9 @@ function Contact() {
                 style={{ margin: "10px" }}
                 href="https://api.whatsapp.com/send?phone=918690361133&text=Hello%20Kalpesh"
               >
-                <WhatsApp sx={{ fontSize: "100px", color: "green" }} />
+                <Wp/>
               </a>
-              <p
-                style={{
-                  fontSize: "20px",
-                  fontFamily: "sans-serif",
-                  fontWeight: "bold",
-                  marginTop: "-5px",
-                }}
-              >
+              <p className="icon-desc">
                 Whatsapp
               </p>
             </div>
