@@ -1,9 +1,15 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import "animate.css/animate.min.css";
 import ScrollAnimation from "@stromsky/react-animate-on-scroll"
 import '../css/home.css'
 
 function Home() {
+
+  const navigate=useNavigate()
+  const Cv=(()=>{
+    navigate('/cv')
+  })
   return (
     <>
       <div className='home-body'>
@@ -13,7 +19,7 @@ function Home() {
           <p className='p-desc2'>JUNIOR REACT JS DEVLOPER</p>
           <div className='home-btns'>
           <a className='btn-1' href='./contact' >Contact ME</a>
-          <a className='btn-2' href='https://resume.io/r/nIYKL0kzE' >My CV</a>
+          <input className='btn-2' type='button' onClick={()=>Cv()} value='My Cv'/>
         </div>
         </div>
         <div className='shadow'>
@@ -33,7 +39,7 @@ function Home() {
           <h1 className='mt-2'>LET’S INTRODUCE ABOUT MYSELF</h1>
           <p className='mt-20'>Whose given. Were gathered. There first subdue greater. Bearing you Whales heaven midst their. Beast creepeth. Fish days.<br></br>s give may shall likeness made yielding spirit a itself together created after sea is in beast beginning signs open god you're gathering whose gathered cattle let. Creature whales fruit unto meat the life beginning all in under give two.</p>
           <div className='cv-link-con '>
-            <a className='cv-link' href='cv-link'>Download CV</a>
+            <a className='cv-link' href='https://drive.google.com/file/d/133s2D5j0kCPWmjTPkI7upoRrVx36-wZl/view?usp=sharing'>Download CV</a>
           </div>
         </div>
       </div>

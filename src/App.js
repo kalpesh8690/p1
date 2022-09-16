@@ -8,6 +8,7 @@ import Contact from './pages/Contact'
 import Certificate from './pages/Certificate'
 import './App.css'
 import { useEffect,useState } from 'react'
+import Resume from './pages/Resume'
 
 
 function App() {
@@ -35,6 +36,7 @@ useEffect(()=>{
         </Route>
         <Route path='/contact' element={<Contact />} />
         <Route path='/cert' element={<Certificate/>}/>
+        <Route path='/cv' element={<Resume/>}/>
       </Routes>}
       
       </>

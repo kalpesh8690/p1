@@ -167,12 +167,18 @@ margin-bottom: 200px;
 }
 .cert-link-btn{
     position: relative;
-    
+    text-decoration: none;
+    color: black;
     background-color:transparent;
     margin: 20px;
     padding: 10px;
     border-radius: 20px;
     border: green solid 2px;
+}
+.m-full{
+    display: flex;
+    justify-content: center;
+    
 }
 .cert-data{
     position: relative;
@@ -336,6 +342,11 @@ margin-bottom: 200px;
             margin-left: 0;
             
         }
+        .m-full{
+            display: flex;
+            justify-content: center;
+            
+        }
         .edu-name-p::before{
             display: inline-block;
             margin: 0 20px 8px 0;
@@ -381,7 +392,7 @@ margin-bottom: 200px;
         .cert-solo-main{
             position: relative;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             justify-content: center;
             
             
@@ -402,7 +413,8 @@ margin-bottom: 200px;
         }
         .cert-link-btn{
             position: relative;
-            
+            text-decoration: none;
+            color: black;
             background-color:transparent;
             margin: 20px;
             padding: 10px;

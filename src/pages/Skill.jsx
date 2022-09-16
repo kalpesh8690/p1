@@ -21,7 +21,7 @@ function Skill() {
           {skills.map((s) => {
             const pr = s.pr;
             return (
-              <ScrollAnimation animateIn="flash">
+              <ScrollAnimation duration={2}  animateIn="fadeIn">
                 <div className="skill-card">
                   <div className="skill-name">
                     <h1 className="skill">{s.name}</h1>

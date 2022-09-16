@@ -76,7 +76,7 @@ function Contact() {
             <div className="icon" style={{ display: "flex", flexDirection: "column" }}>
               <a
                 style={{ margin: "10px" }}
-                href="https://www.instagram.com/mrk._09/"
+                href="https://www.facebook.com/chauhan.kalpesh.1023"
               >
                 <Fb/>
               </a>

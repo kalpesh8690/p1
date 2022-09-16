@@ -1,8 +1,18 @@
 import React from 'react'
 import '../css/edu.css'
 import { Pen, Award, Calendar2CheckFill, Book, AwardFill } from 'react-bootstrap-icons'
+import { useNavigate } from 'react-router-dom'
+import { Button } from '@mui/material'
+
+
 
 function Education() {
+
+  const navigate=useNavigate()
+
+  const CertMore=(()=>{
+      navigate('/cert')
+  })
   return (
     <>
       <div className='edu-main'>
@@ -56,7 +66,7 @@ function Education() {
                   <p>CT-X9Z9MFK2</p>
                 </div>
                 <div className='cert-links'>
-                  <a className='cert-link-btn' src='' >Show credential</a>
+                  <a className='cert-link-btn' href='https://www.sololearn.com/Certificate/1097-386568/pdf/' >Show credential</a>
                 </div>
               </div>
               <div className='cert-solo'>
@@ -68,9 +78,15 @@ function Education() {
                 </div>
                 
                 <div className='cert-links'>
-                  <a className='cert-link-btn' src='' >Show credential</a>
+                  <a className='cert-link-btn' href='https://www.sololearn.com/Certificate/1014-386568/pdf/' >Show credential</a>
                 </div>
               </div>
+              
+              <div className='cert-links m-full'>
+                  <Button className='cert-link-btn' onClick={()=>CertMore()} >Other...</Button>
+                </div>
+             
+              
 
             </div>
             <p className='type-fix mt-20 s-20 '>As a wise man once said:<br></br>
