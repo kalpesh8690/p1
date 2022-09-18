@@ -6,6 +6,34 @@ import {
   Facebook,
   WhatsApp
 } from "@mui/icons-material";
+import { Input } from "@mui/material";
+
+export const SInput=styled(Input)(({theme})=>({
+  [theme.breakpoints.down('md')]: {
+    width:"50x",
+    background:"rgb(65, 65, 65)",
+    textAlign:"center",
+    color:'white',
+    border:"2px solid white",
+    borderRadius:"5px",
+  },
+  [theme.breakpoints.up('md')]: {
+    width:"50px",
+    background:"rgb(65, 65, 65)",
+    textAlign:"center",
+    color:'white',
+    border:"2px solid white",
+    borderRadius:"5px",
+  },
+  [theme.breakpoints.up('lg')]: {
+    width:"50px",
+    background:"rgb(65, 65, 65)",
+    textAlign:"center",
+    color:'white',
+    border:"2px solid white",
+    borderRadius:"5px",
+  },
+}));
 
  export const Wp=styled(WhatsApp)(({theme})=>({
     [theme.breakpoints.down('md')]: {
@@ -82,4 +110,4 @@ import {
     },
   }));
 
- export default styled({Gh,In,Fb,Wp,Ld});
+ export default styled({Gh,In,Fb,Wp,Ld,SInput});

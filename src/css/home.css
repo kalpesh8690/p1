@@ -1,90 +1,90 @@
-.home-body{
-    position:relative;    
+.home-body {
+    position: relative;
     height: 100%;
     width: auto;
     display: flex;
     margin-top: 50px;
-    
-    
 }
 
-.shadow
-{
-    
-    position:relative;
+.shadow {
+
+    position: relative;
     display: flex;
     justify-content: right;
     margin-bottom: 200px;
-    
- 
+
 }
 
 .my-img {
-    
-   
+
+
     width: 600px;
     height: 600px;
-    position:relative;
-    
+    position: relative;
 
-    
-   
+
+
+
 }
-.desc-main{
-    
-   position: relative;
-    
+
+.desc-main {
+
+    position: relative;
+
 
     text-align: center;
     margin-top: 100px;
     height: 500px;
     width: 1000px;
-    
- 
+
+
 }
-.h1-desc{
+
+.h1-desc {
     font-size: 50px;
-    
+
     margin-top: 40px;
     font-weight: bold;
-    
+
 }
-.p-desc2{
+
+.p-desc2 {
     font-size: 20px;
-    
+
     margin-top: 40px;
     text-align: center;
 }
-.p-desc1{
+
+.p-desc1 {
     font-size: 40px;
     margin-left: -30rem;
     margin-top: 10px;
     font-weight: bold;
 
 }
-.p-span{
+
+.p-span {
     background-color: black;
     position: absolute;
     height: 2px;
     width: 400px;
     margin-top: 20px;
-    
+
 }
-.home-btns{
-    position:relative;
+
+.home-btns {
+    position: relative;
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    gap:5px
-    
-    
-    
+    gap: 5px
 }
-.btn-1{
+
+.btn-1 {
     background-color: transparent;
-    
-    border: 2px solid  rgb(46, 161, 0);
-    color:  rgb(46, 161, 0);
+
+    border: 2px solid rgb(46, 161, 0);
+    color: rgb(46, 161, 0);
     width: 120px;
     height: 1.5rem;
     border-radius: 10px;
@@ -93,64 +93,75 @@
     transition: .5s;
     animation: .5s;
 }
-.btn-1:hover{
+
+.btn-1:hover {
     background-color: rgb(46, 161, 0);
-    border: 2px solid  transparent;
+    border: 2px solid transparent;
     width: 120px;
     height: 1.5rem;
     border-radius: 10px;
     color: white;
-    box-shadow: 0px 0px 20px rgb(46, 161, 0);
+    box-shadow: 0px 0px 10px rgb(46, 161, 0);
 }
-.btn-2{
-    
-    padding-top: 8px;
-   
+
+.btn-2 {
+
+    padding-top: 3px;
     margin-left: 20px;
     background-color: rgb(208, 0, 255);
     color: white;
     text-align: center;
+    font-size: 15px;
+    font-weight: bold;
     text-decoration: none;
+    text-transform: uppercase;
     width: 120px;
-    height: 1.5rem;
+    height: 2.3rem;
     border: 2px solid transparent;
-    border-radius:10px;
+    border-radius: 10px;
 }
-.btn-2:hover{
+
+.btn-2:hover {
     background-color: transparent;
-    padding-top: 8px;
+    padding-top: 3px;
     color: black;
     border: 2px solid rgb(208, 0, 255);
-    box-shadow: 0px 0px 10px  rgb(208, 0, 255),0px 0px 10px inset  rgb(208, 0, 255);
+    box-shadow: 0px 0px 4px rgb(208, 0, 255), 0px 0px 4px inset rgb(208, 0, 255);
     width: 120px;
-    height: 1.5rem;
+    height: 2.3rem;
     border-radius: 10px;
     transition: .5s;
     animation: .5s;
 }
-.about-us-main{
+
+.about-us-main {
     position: relative;
     display: flex;
-    gap:20px;
+    gap: 20px;
     height: 50rem;
 }
-.about-img{
+
+.about-img {
     width: 700px;
 }
-.about-us-detail{
+
+.about-us-detail {
     margin-left: 100px;
     width: 500px;
     font-size: 20px;
 }
-.mt-20{
+
+.mt-20 {
     margin-top: 20px;
 }
-.cv-link-con{
+
+.cv-link-con {
     position: relative;
     display: flex;
     justify-content: right;
 }
-.cv-link{
+
+.cv-link {
     position: relative;
     text-decoration: none;
     border: rgb(123, 0, 255) solid 2px;
@@ -161,7 +172,8 @@
     animation: 0.5s;
     transition: 0.3s;
 }
-.cv-link:hover{
+
+.cv-link:hover {
     color: aliceblue;
     background-color: rgb(123, 0, 255);
     animation: 0.5s;
@@ -169,76 +181,79 @@
 }
 
 @media (max-width:768px) {
-    .home-body{
-        position:relative;    
+    .home-body {
+        position: relative;
         margin-left: unset;
         width: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        
-        
-        
-        
+
+
+
+
     }
-    
-    .shadow
-    {
+
+    .shadow {
         margin-top: 20px;
-        position:relative;
-       display: flex;
-       justify-content: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
         width: auto;
-        
+
         height: auto;
         margin-bottom: 10px;
-        
-        
-     
+
+
+
     }
-    
+
     .my-img {
-        
-       
+
+
         width: 240px;
         height: 240px;
-        
-        
-        position:relative;
-        
-    
-        
-       
+
+
+        position: relative;
+
+
+
+
     }
-    .desc-main{
-        
-       position: relative;
-       text-align: center;
-       height: auto;
-        
-    
-    width: auto;
-        
+
+    .desc-main {
+
+        position: relative;
+        text-align: center;
+        height: auto;
+
+
+        width: auto;
+
         margin-top: 10px;
-       
-        
-     
+
+
+
     }
-    .h1-desc{
+
+    .h1-desc {
         font-size: 50px;
-         
+
         margin-top: 20px;
         width: auto;
         font-weight: bold;
-        
+
     }
-    .p-desc2{
+
+    .p-desc2 {
         font-size: 10px;
-        
+
         margin-top: 20px;
         text-align: center;
     }
-    .p-desc1{
+
+    .p-desc1 {
         font-size: 30px;
         display: flex;
         justify-content: center;
@@ -246,33 +261,32 @@
         width: auto;
         margin-top: 10px;
         font-weight: bold;
-    
+
     }
-    
-    .home-btns{
-        position:relative;
+
+    .home-btns {
+        position: relative;
         display: flex;
         justify-content: center;
         margin-top: 40px;
-        gap:5px
-        
-        
-        
+        gap: 5px
     }
-    .btn-1{
+
+    .btn-1 {
         background-color: transparent;
-        
-        border: 2px solid  rgb(46, 161, 0);
-        color:  rgb(46, 161, 0);
+
+        border: 2px solid rgb(46, 161, 0);
+        color: rgb(46, 161, 0);
         width: 120px;
         height: 1.5rem;
         border-radius: 10px;
         padding-top: 8px;
-    
+
         transition: .5s;
         animation: .5s;
     }
-    .btn-1:hover{
+
+    .btn-1:hover {
         background-color: rgb(46, 161, 0);
         border: none;
         width: 120px;
@@ -281,71 +295,83 @@
         color: white;
         box-shadow: 0px 0px 20px rgb(46, 161, 0);
     }
-    .btn-2{
-        
-        padding-top: 8px;
-       
+
+    .btn-2 {
+
+        padding-top: 3px;
         margin-left: 20px;
         background-color: rgb(208, 0, 255);
         color: white;
         text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
         width: 120px;
-        height: 1.5rem;
-        border: none;
-        border-radius:10px;
+        height: 2.3rem;
+        border: 2px solid transparent;
+        border-radius: 10px;
     }
-    .btn-2:hover{
+
+    .btn-2:hover {
         background-color: transparent;
-        padding-top: 8px;
+        padding-top: 3px;
         color: black;
         border: 2px solid rgb(208, 0, 255);
-        box-shadow: 0px 0px 20px  rgb(208, 0, 255);
+        box-shadow: 0px 0px 4px rgb(208, 0, 255), 0px 0px 4px inset rgb(208, 0, 255);
         width: 120px;
-        height: 1.5rem;
+        height: 2.3rem;
         border-radius: 10px;
         transition: .5s;
         animation: .5s;
     }
-    .about-us-main{
+
+    .about-us-main {
         position: relative;
         display: inline-block;
         margin-top: 10px;
-       
-       
-        
+
+
+
     }
-    .about-img{
+
+    .about-img {
         visibility: hidden;
-       margin: 0px;
+        margin: 0px;
         position: relative;
         width: 100px;
-        
+
     }
-    .about-us-detail{
-        
-       margin-left: unset;
+
+    .about-us-detail {
+
+        margin-left: unset;
         font-size: 20px;
         width: auto;
-        
+
     }
-    .mt-20{
+
+    .mt-20 {
         margin-top: 10px;
         line-height: 25px;
         text-align: center;
         word-spacing: 3px;
         margin: 10px;
     }
-    .mt-2{
+
+    .mt-2 {
         margin-top: -50px;
         text-align: center;
     }
-    .cv-link-con{
+
+    .cv-link-con {
         position: relative;
         display: flex;
         justify-content: center;
         margin-top: 50px;
     }
-    .cv-link{
+
+    .cv-link {
         position: relative;
         text-decoration: none;
         border: rgb(123, 0, 255) solid 2px;
@@ -356,11 +382,12 @@
         animation: 0.5s;
         transition: 0.3s;
     }
-    .cv-link:hover{
+
+    .cv-link:hover {
         color: aliceblue;
         background-color: rgb(123, 0, 255);
         animation: 0.5s;
         transition: 0.3s;
     }
- 
+
 }
