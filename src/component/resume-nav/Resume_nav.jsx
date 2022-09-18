@@ -49,7 +49,7 @@ function Resume_nav({setScale }) {
               flexGrow: 1,
               display: { xs: "flex", md: "flex", justifyContent: "right" },
             }}
-          ><a style={{color:"white"}} href="https://doc-0c-2k-apps-viewer.googleusercontent.com/viewer/secure/pdf/qkahs8vmli0i6p8eftnaovkrh52n5ea5/fis3lhp2g83ue5h7gk5q3ourla0hpavq/1663495875000/drive/13331376633312987884/ACFrOgAq3cp1dW-ARfITbC-4Rb6sMZHW6BiNlAuPYB2d9LkNqXrENuuBTDxXK-7GMRWuLZiEnjItyxQPgIntwtPG6GYFyW6Nf1JUssw-SBJ_q-212BXWba7TN3Jelg0FJ1RqiipF0MP8RWigd71z?print=true&nonce=qsknmqt6cas8s&user=13331376633312987884&hash=9kpqd5lqn5cnlaq0k3a4bksmc0i4af3l">
+          ><a style={{color:"white"}} href="https://drive.google.com/file/d/133s2D5j0kCPWmjTPkI7upoRrVx36-wZl/view">
             <Print/>
             </a>
             
