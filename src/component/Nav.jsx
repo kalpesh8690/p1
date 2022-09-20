@@ -201,7 +201,6 @@ const Nav = () => {
                   size={50}
                 />
                 
-                
               )}
               
             </ThemeContext.Consumer>

@@ -24,7 +24,7 @@ function Education() {
         </div>
         <div className='uni-main'>
           <div className='uni-con'>
-            <img className='uni-logo' src='./mkbhu.jpg' />
+            <img className='uni-logo' src='./mkbhu.png' />
             <p className='uni-name'>Maharaja Krishnakumarsinhji <span className='uni-name-span'>Bhavnagar University</span></p>
           </div>
         </div>
