@@ -15,6 +15,8 @@ import DarkModeToggle from "react-dark-mode-toggle";
 import { ThemeContext, themes } from "../theme/context";
 import { useDispatch } from "react-redux";
 import { dark,light } from "../redux/action";
+import { orange } from "@mui/material/colors";
+import { Laptop, LaptopMac } from "@mui/icons-material";
 
 const Nav = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -50,13 +52,14 @@ const Nav = () => {
               mr: 2,
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "black",
+              fontWeight: 900,
+              letterSpacing: ".2rem",
+              color: "orange",
               textDecoration: "none",
             }}
           >
-            <img className="logo" src="./logo192.png"></img>
+            <LaptopMac sx={{color:isDarkMode===true?"#FFFFFF":"#121212"}} fontSize="large"/>
+            KALPESH
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -68,9 +71,10 @@ const Nav = () => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon sx={{color:isDarkMode===true?"#FFFFFF":"#121212"}} />
             </IconButton>
-            <Menu
+            <Menu 
+
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -89,7 +93,7 @@ const Nav = () => {
                 justifyContent: "center",
               }}
             >
-              <MenuItem onClick={handleCloseNavMenu}>
+              <MenuItem sx={{margin:"0",padding:"0",background:isDarkMode===true?"#152238":"#FFFFFF"}} onClick={handleCloseNavMenu}>
                 <ul>
                   <li>
                     <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/">
@@ -136,13 +140,14 @@ const Nav = () => {
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
               fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
+              fontWeight: 900,
+              letterSpacing: ".2rem",
+              color:"orange",
               textDecoration: "none",
             }}
           >
-            <img className="logo" src="./logo192.png"></img>
+            <LaptopMac sx={{color:isDarkMode===true?"#FFFFFF":"#121212"}} fontSize="large"/>
+            KALPESH
           </Typography>
           <Box
             sx={{
