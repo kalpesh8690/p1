@@ -7,8 +7,6 @@
     text-decoration: none;
     font-weight: bold;
     margin-top: 5px;
-    
-    color: black;
 }
 .active{
     
@@ -34,4 +32,8 @@ ul{
 }
 .logo{
     width: 100px;
+}
+.toggle-btn{
+    border: 2px solid black;
+    
 }

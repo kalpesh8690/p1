@@ -1,8 +1,10 @@
 import React,{useState} from "react";
 import {Gh,In,Ld,Wp,Fb} from '../styled/styled'
 import "../css/contact.css";
-import { Input,Box, Button } from "@mui/material";
+import {Box, Button } from "@mui/material";
 import emailjs from '@emailjs/browser';
+import { useSelector } from 'react-redux';
+import {shallowEqual} from 'react-redux';
 
 function Contact() {
 
@@ -12,6 +14,10 @@ function Contact() {
   const [email,setEmail]=useState('');
   const [mobile,setMobile]=useState('');
   const [massage,setMassage]=useState('');
+
+  const mode=useSelector((state)=>state.counterReducer,shallowEqual);
+
+
 
   const ContactForm=(()=>{
     var data={
@@ -104,19 +110,19 @@ function Contact() {
           <div className="contact-form">
           <Box className="contact-box"  >
             <div className="form-name">
-            <Input onChange={(e)=>setFname(e.target.value)} value={fname} className="contact-input" aria-label="Name" placeholder="FirstName"/>
-            <Input onChange={(e)=>setLname(e.target.value)} value={lname} className="contact-input" id="required" aria-label="Name" placeholder="LastName"/>
+            <input type='text' style={mode===true?{color:"white",border:"2px solid white"}:{color:"black",border:"2px solid grey"}} onChange={(e)=>setFname(e.target.value)} value={fname} className="contact-input" aria-label="Name" placeholder="FirstName"/>
+            <input type='text' style={mode===true?{color:"white",border:"2px solid white"}:{color:"black",border:"2px solid grey"}} onChange={(e)=>setLname(e.target.value)} value={lname} className="contact-input" id="required" aria-label="Name" placeholder="LastName"/>
             
             </div>
             <div className="form-contact-detail">
-            <Input onChange={(e)=>setEmail(e.target.value)} value={email} className="contact-input"  aria-label="Name" placeholder="Email"/>
-            <Input onChange={(e)=>setMobile(e.target.value)} value={mobile} className="contact-input"  aria-label="Name" placeholder="Mobile"/>
+            <input type='text' style={mode===true?{color:"white",border:"2px solid white"}:{color:"black",border:"2px solid grey"}} onChange={(e)=>setEmail(e.target.value)} value={email} className="contact-input"  aria-label="Name" placeholder="Email"/>
+            <input type='text' style={mode===true?{color:"white",border:"2px solid white"}:{color:"black",border:"2px solid grey"}} onChange={(e)=>setMobile(e.target.value)} value={mobile} className="contact-input"  aria-label="Name" placeholder="Mobile"/>
             </div>
             <div className="form-massage">
-            <Input onChange={(e)=>setMassage(e.target.value)} value={massage} sx={{width:"90vh"}} aria-label="Name" placeholder="Massage"/>
+            <textarea type='text' style={mode===true?{color:"white",border:"2px solid white"}:{color:"black",border:"2px solid grey"}} onChange={(e)=>setMassage(e.target.value)} value={massage} className="contact-msg"  aria-label="Name" placeholder="Massage"/>
             </div>
             <div className="form-btn">
-            <Button className="submit-btn"  variant="undefined" onClick={ContactForm} >Submit</Button>
+            <Button className="submit-btn"  variant="outlined" onClick={ContactForm} >Submit</Button>
             </div>
             
             

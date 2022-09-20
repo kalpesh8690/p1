@@ -4,7 +4,10 @@ import "animate.css/animate.min.css";
 import ScrollAnimation from "@stromsky/react-animate-on-scroll"
 import '../css/home.css'
 
+
 function Home() {
+
+
 
   const navigate=useNavigate()
   const Cv=(()=>{
@@ -15,7 +18,10 @@ function Home() {
       <div className='home-body'>
         <div className='desc-main'>
           <p className='p-desc1'>Hello</p>
-          <h1 className='h1-desc'>I AM <span style={{color:'orange'}}>KALPESH CHAUHAN</span></h1>
+          <div className='my-name'>
+              <h1 className='h1-desc'>I AM </h1>
+              <h1 data-text=" KALPESH" className='kalpesh-name'> KALPESH CHAUHAN</h1>
+          </div>
           <p className='p-desc2'>JUNIOR REACT JS DEVLOPER</p>
           <div className='home-btns'>
           <a className='btn-1' href='./contact' >Contact ME</a>

@@ -1,47 +1,46 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-import {NavLink} from 'react-router-dom'
-import '../css/navbar.css'
-
-const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Container from "@mui/material/Container";
+import MenuItem from "@mui/material/MenuItem";
+import { NavLink } from "react-router-dom";
+import "../css/navbar.css";
+import { useState,useEffect } from "react";
+import DarkModeToggle from "react-dark-mode-toggle";
+import { ThemeContext, themes } from "../theme/context";
+import { useDispatch } from "react-redux";
+import { dark,light } from "../redux/action";
 
 const Nav = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [isDarkMode, setIsDarkMode] = useState(() => false);
 
+  const dispatch=useDispatch()
+
+    if(isDarkMode===true){
+        dispatch(dark())
+    }else{
+        dispatch(light())
+    }
+ 
+  
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
   return (
-    <AppBar position="sticky" sx={{color:'black',background:'white'}}>
+    <AppBar position="sticky" sx={{ color: "white", background: isDarkMode===true?"#152238":"#FFFFFF" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          
           <Typography
             variant="h6"
             noWrap
@@ -49,18 +48,18 @@ const Nav = () => {
             href="/"
             sx={{
               mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
+              display: { xs: "none", md: "flex" },
+              fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'black',
-              textDecoration: 'none',
+              letterSpacing: ".3rem",
+              color: "black",
+              textDecoration: "none",
             }}
           >
-            <img className='logo' src='./logo192.png'></img>
+            <img className="logo" src="./logo192.png"></img>
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -75,36 +74,58 @@ const Nav = () => {
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
+                vertical: "bottom",
+                horizontal: "left",
               }}
               keepMounted
               transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
+                vertical: "top",
+                horizontal: "left",
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: "block", md: "none" },
+                justifyContent: "center",
               }}
             >
-              
-                <MenuItem onClick={handleCloseNavMenu}>
-                    <ul>
-                            <li><NavLink className='nav-link' to='/'>Home</NavLink></li>
-                            <li><NavLink className='nav-link' to='/skill'>Skill</NavLink></li>
-                            <li><NavLink className='nav-link' to='/education'>Education</NavLink></li>
-                            <li><NavLink className='nav-link' to='/cert'>Certificates</NavLink></li>
-                            <li><NavLink className='nav-link' to='/about'>About Me</NavLink></li>
-                            <li><NavLink className='nav-link' to='/contact'>Contact</NavLink></li>  
-                    </ul>
-                  
-                </MenuItem>
-             
+              <MenuItem onClick={handleCloseNavMenu}>
+                <ul>
+                  <li>
+                    <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/">
+                      Home
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/skill">
+                      Skill
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/education">
+                      Education
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/cert">
+                      Certificates
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/about">
+                      About Me
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/contact">
+                      Contact
+                    </NavLink>
+                  </li>
+                </ul>
+              </MenuItem>
             </Menu>
           </Box>
-          
+
           <Typography
             variant="h5"
             noWrap
@@ -112,26 +133,64 @@ const Nav = () => {
             href=""
             sx={{
               mr: 2,
-              display: { xs: 'flex', md: 'none' },
+              display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              fontFamily: 'monospace',
+              fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
             }}
           >
-           <img className='logo' src='./logo192.png'></img>
+            <img className="logo" src="./logo192.png"></img>
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex',justifyContent:'right' } }}>
-                            <NavLink className='nav-link' to='/'>Home</NavLink>
-                            <NavLink className='nav-link' to='/skill'>Skill</NavLink>
-                            <NavLink className='nav-link' to='/education'>Education</NavLink>
-                            <NavLink className='nav-link' to='/cert'>Certificates</NavLink>
-                            <NavLink className='nav-link' to='/about'>About Me</NavLink>
-                            <NavLink className='nav-link' to='/contact'>Contact</NavLink>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex", justifyContent: "right" },
+            }}
+          >
+            <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/">
+              Home
+            </NavLink>
+            <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/skill">
+              Skill
+            </NavLink>
+            <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/education">
+              Education
+            </NavLink>
+            <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/cert">
+              Certificates
+            </NavLink>
+            <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/about">
+              About Me
+            </NavLink>
+            <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/contact">
+              Contact
+            </NavLink>
           </Box>
-
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex", md: "flex", justifyContent: "right" },
+            }}
+          >
+            <ThemeContext.Consumer>
+              {({ changeTheme }) => (
+                <DarkModeToggle
+          
+                  onChange={() => {
+                    setIsDarkMode(!isDarkMode);
+                    changeTheme(isDarkMode ? themes.light : themes.dark);
+                  }}
+                  checked={isDarkMode}
+                  size={50}
+                />
+                
+              )}
+            </ThemeContext.Consumer>
+            
+          </Box>
         </Toolbar>
       </Container>
     </AppBar>

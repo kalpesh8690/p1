@@ -14,6 +14,40 @@
     margin-bottom: 200px;
 
 }
+.my-name{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.kalpesh-name{
+    -webkit-text-stroke: 0.01vw orange;
+    font-size: 50px;
+    margin-top: 40px;
+    font-weight: bold;
+    color: orange;
+}
+.kalpesh-name::before{
+    content: attr(data-text);
+    position: absolute;
+    width: 0%;
+    height: 8%;
+    color: red;
+    -webkit-text-stroke: 0.01vw red;
+    overflow: hidden;
+    border-right: 2px solid red;
+    animation: animate 6s linear infinite;
+    -webkit-animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        width: 0%;
+    }
+    30%{
+        width: 25%;
+    }
+}
 
 .my-img {
 
@@ -239,11 +273,44 @@
 
     .h1-desc {
         font-size: 50px;
-
         margin-top: 20px;
         width: auto;
         font-weight: bold;
 
+    }
+    .my-name{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .kalpesh-name{
+        -webkit-text-stroke: 0.01vw orange;
+        font-size: 50px;
+        margin-top: unset;
+        font-weight: bold;
+        color: orange;
+    }
+    .kalpesh-name::before{
+        content: attr(data-text);
+        position: absolute;
+        width: 0%;
+        height: 11%;
+        color: red;
+        -webkit-text-stroke: 0.01vw red;
+        overflow: hidden;
+        border-right: 2px solid red;
+        animation: animate 6s linear infinite;
+        -webkit-animation: animate 6s linear infinite;
+    }
+    
+    @keyframes animate {
+        0%{
+            width: 0%;
+        }
+        30%{
+            width: 62%;
+        }
     }
 
     .p-desc2 {

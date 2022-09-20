@@ -3,11 +3,14 @@ import '../css/edu.css'
 import { Pen, Award, Calendar2CheckFill, Book, AwardFill } from 'react-bootstrap-icons'
 import { useNavigate } from 'react-router-dom'
 import { Button } from '@mui/material'
+import { useSelector } from 'react-redux';
+import {shallowEqual} from 'react-redux';
 
 
 
 function Education() {
 
+  const mode=useSelector((state)=>state.counterReducer,shallowEqual);
   const navigate=useNavigate()
 
   const CertMore=(()=>{
@@ -29,7 +32,7 @@ function Education() {
         <div className='edu-card'>
           <div className='clg-con'>
 
-            <p className='clg-name'>Smt ks kapasi <span className='uni-name-span'>BCA</span> college palitana</p>
+            <p style={mode===true?{color:"white"}:{color:"black"}} className='clg-name'>Smt ks kapasi <span className='uni-name-span'>BCA</span> college palitana</p>
           </div>
 
           <div className='course-main'>
@@ -66,7 +69,7 @@ function Education() {
                   <p>CT-X9Z9MFK2</p>
                 </div>
                 <div className='cert-links'>
-                  <a className='cert-link-btn' href='https://www.sololearn.com/Certificate/1097-386568/pdf/' >Show credential</a>
+                  <a className='cert-link-btn' style={mode===true?{color:"white"}:{color:"black"}} href='https://www.sololearn.com/Certificate/1097-386568/pdf/' >Show credential</a>
                 </div>
               </div>
               <div className='cert-solo'>
@@ -78,12 +81,12 @@ function Education() {
                 </div>
                 
                 <div className='cert-links'>
-                  <a className='cert-link-btn' href='https://www.sololearn.com/Certificate/1014-386568/pdf/' >Show credential</a>
+                  <a className='cert-link-btn' style={mode===true?{color:"white"}:{color:"black"}} href='https://www.sololearn.com/Certificate/1014-386568/pdf/' >Show credential</a>
                 </div>
               </div>
               
               <div className='cert-links m-full'>
-                  <Button className='cert-link-btn' onClick={()=>CertMore()} >Other...</Button>
+                  <Button  className='cert-link-btn' onClick={()=>CertMore()} >Other...</Button>
                 </div>
              
               

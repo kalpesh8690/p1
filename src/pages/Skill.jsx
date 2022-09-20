@@ -54,6 +54,7 @@ function Skill() {
           })}
         </div>
       </div>
+
     </>
   );
 }

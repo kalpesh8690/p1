@@ -83,9 +83,9 @@ margin-bottom: 20px;
 }
 .m-cert-solo:hover{
     border: transparent solid 2px;
-    background-color: rgb(35, 35, 35);
+    background-color: rgb(0, 0, 0);
     color: aliceblue;
-    border:transparent solid 2px
+    border:2px solid white ;
 }
 .cert-name{
     margin: 20px;
