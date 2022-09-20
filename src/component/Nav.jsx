@@ -19,8 +19,9 @@ import { orange } from "@mui/material/colors";
 import { Laptop, LaptopMac } from "@mui/icons-material";
 
 const Nav = () => {
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [isDarkMode, setIsDarkMode] = useState(() => false);
+  const [isDarkMode, setIsDarkMode] = useState(() => prefersDark);
 
   const dispatch=useDispatch()
 
@@ -29,6 +30,13 @@ const Nav = () => {
     }else{
         dispatch(light())
     }
+       
+      React.useLayoutEffect(() => {
+        if (prefersDark) {
+          setIsDarkMode(true);
+        }
+
+    }, [prefersDark]);
  
   
   const handleOpenNavMenu = (event) => {
@@ -187,12 +195,15 @@ const Nav = () => {
                   onChange={() => {
                     setIsDarkMode(!isDarkMode);
                     changeTheme(isDarkMode ? themes.light : themes.dark);
+                    
                   }}
                   checked={isDarkMode}
                   size={50}
                 />
                 
+                
               )}
+              
             </ThemeContext.Consumer>
             
           </Box>

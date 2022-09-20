@@ -7,7 +7,7 @@ import ScrollAnimation from "@stromsky/react-animate-on-scroll";
 import "animate.css/animate.min.css";
 
 function Skill() {
-  console.log(skills);
+
   return (
     <>
       <div className="skill-main">
@@ -18,10 +18,10 @@ function Skill() {
         </div>
 
         <div className="skill-card-main">
-          {skills.map((s) => {
+          {skills.map((s,i) => {
             const pr = s.pr;
             return (
-              <ScrollAnimation duration={2}  animateIn="fadeIn">
+              <ScrollAnimation  key={i} duration={2}  animateIn="fadeIn">
                 <div className="skill-card">
                   <div className="skill-name">
                     <h1 className="skill">{s.name}</h1>
