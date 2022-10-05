@@ -378,13 +378,22 @@ margin-bottom: 20px;
             
         }
         .cert-head-main{
-            position: relative;
-            width: auto;
-            justify-content: center;
-            display: flex;
-            flex-wrap: wrap;
-            margin-left: unset;
-            line-height: 20px;
+            font-size: 40px;
+        padding: 1px;
+        padding-top: 4px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        border: 3px solid orangered;
+        }
+        .cert-head-main::before{
+            display: none;
+            visibility: hidden;
+        }
+        .cert-head-main::after{
+            display: none;
+            visibility: hidden;
         }
         .cert-detail-main{
             display: inline-block;

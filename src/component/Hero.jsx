@@ -8,10 +8,10 @@ import '../App.css';
 function Hero() {
   return (
     <>
-        <Home />
-        <Skill />
-        <Education />
-        <About />  
+        <Home/>
+        <Skill/>
+        <Education/>
+        <About/>  
     </>
   );
 }

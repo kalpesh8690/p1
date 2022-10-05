@@ -17,6 +17,8 @@ import { useDispatch } from "react-redux";
 import { dark,light } from "../redux/action";
 import { orange } from "@mui/material/colors";
 import { Laptop, LaptopMac } from "@mui/icons-material";
+import { Button } from "@mui/material";
+import { findDOMNode } from "react-dom";
 
 const Nav = () => {
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -47,6 +49,29 @@ const Nav = () => {
     setAnchorElNav(null);
   };
 
+  const Shome=(()=>{
+    window.scrollTo()
+  })
+  const Sskill=(()=>{
+    window.scrollTo({
+      top:findDOMNode()
+    })
+  })
+  const SEdu=(()=>{
+    window.scrollTo(0,900)
+  })
+  const SCert=(()=>{
+    window.scrollTo(0,1000)
+  })
+  const SAbout=(()=>{
+    window.scrollTo(0,1130)
+  })
+
+  const sc=window.addEventListener("scroll",(e)=>{
+    var scrl=screenY;
+    console.log(scrl)
+  })
+console.log()
   return (
     <AppBar position="sticky" sx={{ color: "white", background: isDarkMode===true?"#152238":"#FFFFFF" }}>
       <Container maxWidth="xl">
@@ -119,7 +144,7 @@ const Nav = () => {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/cert">
+                    <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link"  to="/cert">
                       Certificates
                     </NavLink>
                   </li>
@@ -163,19 +188,19 @@ const Nav = () => {
               display: { xs: "none", md: "flex", justifyContent: "right" },
             }}
           >
-            <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/">
+            <NavLink onClick={()=>Shome()} style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/">
               Home
             </NavLink>
-            <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/skill">
+            <NavLink onClick={()=>Sskill()} style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/skill">
               Skill
             </NavLink>
-            <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/education">
+            <NavLink onClick={()=>SEdu()} style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/education">
               Education
             </NavLink>
-            <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/cert">
+            <NavLink onClick={()=>SCert()} style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/cert">
               Certificates
             </NavLink>
-            <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/about">
+            <NavLink onClick={()=>SAbout()} style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/about">
               About Me
             </NavLink>
             <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/contact">

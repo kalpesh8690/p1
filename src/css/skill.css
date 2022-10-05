@@ -4,13 +4,31 @@
     
 }
 .skill-title-main{
-    
+    position: relative;
     margin-top: 10px;
     text-align: center;
 }
 .skill-name-p{
     font-size: 40px;
     text-transform: uppercase;
+}
+.skill-name-p::before{
+    display: inline-block;
+    margin: 0 20px 8px 0;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: orangered;
+    width: 500px;
+}
+.skill-name-p::after{
+    display: inline-block;
+    margin: 0 0 8px 20px;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: orangered;
+    width: 500px;
 }
 .skill-name-span{
     color: orange;
@@ -20,25 +38,13 @@
     position:relative;
     display: inline-flex;
     flex-wrap:wrap;
-    
-    justify-content: center;
-    
-    
-    
-    
-    
-   
-    
+    justify-content: center;    
 }
 .skill-card{
     display: inline-block;
-    
-    
     position: relative;
     margin: 0px;
-    gap: 0px;
-    
-    
+    gap: 0px;  
 }
 .skill-name{
     position: relative;
@@ -110,7 +116,21 @@
     }
     .skill-name-p{
         font-size: 40px;
+        padding: 3px;
+        padding-top: 4px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
         text-transform: uppercase;
+        border: 3px solid orangered;
+    }
+    .skill-name-p::before{
+        display: none;
+        visibility: hidden;
+    }
+    .skill-name-p::after{
+        display: none;
+        visibility: hidden;
     }
     .skill-name-span{
         color: orange;
