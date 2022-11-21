@@ -7,12 +7,12 @@
     {
         "name": "ExpressJS",
         "icon": "https://icon-library.com/images/nodejs-icon/nodejs-icon-15.jpg",
-        "pr":30
+        "pr":50
     },
     {
         "name": "NodeJS",
         "icon": "https://icon-library.com/images/nodejs-icon/nodejs-icon-24.jpg",
-        "pr":30
+        "pr":60
     },
     {
         "name": "Redux",
@@ -23,6 +23,11 @@
         "name": "Material UI",
         "icon": "https://www.pngitem.com/pimgs/m/577-5779757_react-material-ui-logo-hd-png-download.png",
         "pr":60
+    },
+    {
+        "name": "Element UI",
+        "icon": "./elu-logo.png",
+        "pr":50
     },
     {
         "name": "Bootstrap",
