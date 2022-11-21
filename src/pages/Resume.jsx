@@ -1,53 +1,53 @@
-import React, {  useEffect, useRef, useState } from "react";
-import Resume_nav from "../component/resume-nav/Resume_nav";
-import { throttle } from "lodash";
-import { Document, pdfjs, Page } from "react-pdf";
+import React, { useState } from "react";
 import "../css/resume.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+import { Cake,LinkedIn,Mail,Phone,Mouse,Map } from "@mui/icons-material";
+import data from "../resume_data.json"
 
 function Resume() {
-  const [initialWidth, setInitialWidth] = useState(null);
-  const [scale,setScale]=useState(1)
-  const pdfWrapper = useRef(null);
-
-  const setPdfSize = () => {
-    if (pdfWrapper && pdfWrapper.current) {
-      setInitialWidth(pdfWrapper.current.getBoundingClientRect().width);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", throttle(setPdfSize, 3000));
-    setPdfSize();
-    return () => {
-      window.removeEventListener("resize", throttle(setPdfSize, 3000));
-    };
-  }, []);
-
   return (
     <div className="main-cv">
-    <Resume_nav setScale={setScale}/>
-    <div id="pdfWrapper" style={{ width: '98vw' }} ref={pdfWrapper}>
-      <Document
-        className="resume"
-        file="/cv.pdf"
-        onLoadError={() => {
-          console.log("CALLED");
-        }}
-        onLoadProgress={() => {
-          return(
-            <>
-              <h1>Pdf Loading.....</h1>
-            </>
-          )
-        }}
-        page={1}
-      >
-        <Page className="cv" scale={scale} pageNumber={1}  width={initialWidth} />
-      </Document>
+      <div className="resumeWrraper">
+        <div className="resume">
+            <div className="main-detailWrraper">
+              <div className="profile-picWrraper">
+                  <div className="profile-pic">
+                    <img className="img-set" src='/01.jpeg'/>
+                  </div>
+              </div>
+              <div className="person-name-wrraper">
+                  <div className="person-name-inner">
+                    <h1 className="person-name">
+                      {data.basics.name}
+                    </h1>
+                    <h3 className="person-name-headline">
+                      {data.basics.headline}
+                    </h3>
+                  </div>
+              </div>
+              <div className="contact-info-wrraper">
+                <div className="basic-contact-info">
+                   <a href={data.basics.website} className="website"><Mouse/>{data.basics.website}</a>
+                   <a href={data.basics.email} className="email"><Mail/>{data.basics.email}</a>
+                   <p className="birthday"><Cake/>{data.basics.birthdate}</p>
+                   <a href={data.basics.phone} className="mobile"><Phone/>{data.basics.phone}</a>
+                   <div className="location">
+                      <p className="address"><Map/>{data.basics.location.address},{data.basics.location.city},{data.basics.location.country},{data.basics.location.postalCode}</p>
+                   </div>
+                </div>
+              </div>
+              <div className="skillWrraper">
+                <div className="headingOfskill">
+                  <p>skill</p>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div className="detailWrraper">
+ 
+            </div>
+        </div>
+      </div>
     </div>
-    </div>
-   
   );
 }
 

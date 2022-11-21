@@ -3,42 +3,23 @@ import "../css/skill.css";
 import skills from "../skills.json";
 import ProgressBar from "@ramonak/react-progress-bar";
 import { Display } from "react-bootstrap-icons";
-import ScrollAnimation from "@stromsky/react-animate-on-scroll";
 import "animate.css/animate.min.css";
-import { motion } from "framer-motion";
 
 function Skill() {
-  const transation = { duration: 1, type: "spring" };
-
   return (
     <>
       <div className="skill-main">
-        <motion.div
-          initial={{ opacity: "0", scale: 0 }}
-          whileInView={{ opacity: "1", scale:1 }}
-          transition={transation}
-          className="skill-title-main"
-        >
-          <motion.p
-            initial={{ opacity: "0", scale: 0 }}
-            whileInView={{ opacity: "1", scale:1 }}
-            transition={transation}
-            className="skill-name-p"
-          >
+        <div className="skill-title-main">
+          <p className="skill-name-p">
             Skill & <span className="skill-name-span">Abilities</span>
-          </motion.p>
-        </motion.div>
+          </p>
+        </div>
 
         <div className="skill-card-main">
           {skills.map((s, i) => {
             const pr = s.pr;
             return (
-              <motion.div
-              initial={{ opacity: "0", scale: 0 }}
-              whileInView={{ opacity: "1", scale:1 }}
-              transition={transation}
-                className="skill-card"
-              >
+              <div className="skill-card">
                 <div className="skill-name">
                   <h1 className="skill">{s.name}</h1>
                 </div>
@@ -64,7 +45,7 @@ function Skill() {
                     </span>
                   </p>
                 </div>
-              </motion.div>
+              </div>
             );
           })}
         </div>

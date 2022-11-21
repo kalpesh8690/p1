@@ -9,10 +9,9 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
 import { useSelector } from "react-redux";
 import { shallowEqual } from "react-redux";
-import { motion } from "framer-motion";
+
 
 function Education() {
-  const transation = { duration: 1, type: "spring" };
   const mode = useSelector((state) => state.counterReducer, shallowEqual);
   const navigate = useNavigate();
 
@@ -23,21 +22,17 @@ function Education() {
     <>
       <div className="edu-main">
         <div className="edu-title-main">
-          <motion.p
-            initial={{ opacity: "0", scale:0 }}
-            whileInView={{ opacity: "1", scale:1 }}
-            transition={transation}
+          <p
+            
             className="edu-name-p"
           >
             <Pen color="orange" size={40} />
             Education & <span className="edu-name-span">Certificates</span>
-          </motion.p>
+          </p>
         </div>
         <div className="uni-main">
-          <motion.div
-            initial={{ opacity: "0", scale: 0 }}
-            whileInView={{ opacity: "1", scale:1 }}
-            transition={transation}
+          <div
+            
             className="uni-con"
           >
             <img className="uni-logo" src="./mkbhu.png" />
@@ -45,14 +40,12 @@ function Education() {
               Maharaja Krishnakumarsinhji{" "}
               <span className="uni-name-span">Bhavnagar University</span>
             </p>
-          </motion.div>
+          </div>
         </div>
 
         <div className="edu-card">
-          <motion.div
-            initial={{ opacity: "0", scale: 0 }}
-            whileInView={{ opacity: "1", scale:1 }}
-            transition={transation}
+          <div
+            
             className="clg-con"
           >
             <p
@@ -62,14 +55,12 @@ function Education() {
               Smt ks kapasi <span className="uni-name-span">BCA</span> college
               palitana
             </p>
-          </motion.div>
+          </div>
 
           <div className="course-main">
             <div className="course-detail">
-              <motion.p
-                initial={{ opacity: "0", scale: 0 }}
-                whileInView={{ opacity: "1", scale:1 }}
-                transition={transation}
+              <p
+                
                 className="c-p course"
               >
                 <span>
@@ -77,73 +68,60 @@ function Education() {
                 </span>
                 Bachelor <span className="of"> Of </span> Computer
                 Application(BCA)
-              </motion.p>
-              <motion.p
-                initial={{ opacity: "0", scale: 0 }}
-                whileInView={{ opacity: "1", scale:1 }}
-                transition={transation}
+              </p>
+              <p
+                
+             
                 className="c-p date u-case"
               >
                 Jun-2019
-              </motion.p>
+              </p>
               <p className="c-p to">To</p>
-              <motion.p
-                initial={{ opacity: "0", scale: 0 }}
-                whileInView={{ opacity: "1", scale:1 }}
-                transition={transation}
+              <p
+               
                 className="c-p date u-case"
               >
                 May-2022
-              </motion.p>
-              <motion.p
-                initial={{ opacity: "0", scale: 0 }}
-                whileInView={{ opacity: "1", scale:1 }}
-                transition={transation}
+              </p>
+              <p
+                
                 className="c-p u-case s-20"
               >
                 <AwardFill color="red" size={20} />
                 First Class
-              </motion.p>
+              </p>
             </div>
 
             <div className="edu-logo-main">
-              <motion.img
-                initial={{ opacity: "0", scale: 0 }}
-                whileInView={{ opacity: "1", scale:1 }}
-                transition={transation}
+              <img
+                
                 className="edu-logo"
                 src="edu.png"
-              ></motion.img>
+              ></img>
             </div>
           </div>
         </div>
         <div className="cert-main">
           <div className="cert-logo-con">
-            <motion.img
-              initial={{ opacity: "0", scale: 0 }}
-              whileInView={{ opacity: "1", scale:1 }}
-              transition={transation}
+            <img
+              
               className="cert-logo"
               src="cert.png"
-            ></motion.img>
+            ></img>
           </div>
           <div className="cert-detail-main">
-            <motion.div
-              initial={{ opacity: "0", scale: 0 }}
-              whileInView={{ opacity: "1", scale:1 }}
-              transition={transation}
+            <div
+              
               className="cert-head-main"
             >
               <p className="cert-by c-p u-case">
                 Certificate <span style={{ color: "orange" }}> BY</span>{" "}
               </p>
               <img className="sololearn-logo" src="./solo.png" />
-            </motion.div>
+            </div>
             <div className="cert-solo-main">
-              <motion.div
-                initial={{ opacity: "0", scale: 0 }}
-                whileInView={{ opacity: "1", scale: 1 }}
-                transition={transation}
+              <div
+                
                 className="cert-solo"
               >
                 <img className="cert-logos" src="./react+redux.jpeg"></img>
@@ -163,11 +141,9 @@ function Education() {
                     Show credential
                   </a>
                 </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: "0", scale: 0 }}
-                whileInView={{ opacity: "1", scale: 1 }}
-                transition={transation}
+              </div>
+              <div
+                
                 className="cert-solo"
               >
                 <img className="cert-logos" src="./html5.png"></img>
@@ -188,7 +164,7 @@ function Education() {
                     Show credential
                   </a>
                 </div>
-              </motion.div>
+              </div>
 
               <div className="cert-links m-full">
                 <Button className="cert-link-btn" onClick={() => CertMore()}>
@@ -196,10 +172,8 @@ function Education() {
                 </Button>
               </div>
             </div>
-            <motion.p
-              initial={{ opacity: "0", scale: 0 }}
-              whileInView={{ opacity: "1", scale: 1 }}
-              transition={transation}
+            <p
+              
               className="type-fix mt-20 s-20 "
             >
               As a wise man once said:<br></br>
@@ -208,7 +182,7 @@ function Education() {
               work. And the only way to do great work is to love what you do. If
               you haven't found it yet, keep looking. Don't settle. As with all
               matters of the heart, you'll know when you find it." - Steve Jobs
-            </motion.p>
+            </p>
           </div>
         </div>
       </div>
