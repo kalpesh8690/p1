@@ -22,7 +22,7 @@ function Home() {
             </h1>
           </div>
           <div className="job-positon">
-          <p className="p-desc2">MERN STACK DEVLOPER AT</p>
+          <p className="p-desc2">MERN STACK DEVELOPER AT</p>
           <a href="https://brained.app/">
             <img className="brained-logo" src="./brained.png"/>
           </a>
