@@ -134,8 +134,8 @@ console.log()
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/skill">
-                      Skill
+                    <NavLink style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/experience">
+                    Experience
                     </NavLink>
                   </li>
                   <li>
@@ -191,8 +191,8 @@ console.log()
             <NavLink onClick={()=>Shome()} style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/">
               Home
             </NavLink>
-            <NavLink onClick={()=>Sskill()} style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/skill">
-              Skill
+            <NavLink onClick={()=>Sskill()} style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/experience">
+            Experience
             </NavLink>
             <NavLink onClick={()=>SEdu()} style={({isActive})=>isActive?{color:"red"}:{color:isDarkMode===true?"#FFFFFF":"#121212"}} className="nav-link" to="/education">
               Education

@@ -23,6 +23,7 @@
     "react-bootstrap-icons": "^1.8.4",
     "react-dark-mode-toggle": "^0.2.0",
     "react-dom": "^18.2.0",
+    "react-loading-screen": "^0.0.17",
     "react-pdf": "^5.7.2",
     "react-print-tool": "^2.0.0",
     "react-redux": "^8.0.2",

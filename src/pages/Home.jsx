@@ -21,7 +21,13 @@ function Home() {
               KALPESH CHAUHAN
             </h1>
           </div>
-          <p className="p-desc2">JUNIOR REACT JS DEVLOPER</p>
+          <div className="job-positon">
+          <p className="p-desc2">MERN STACK DEVLOPER AT</p>
+          <a href="https://brained.app/">
+            <img className="brained-logo" src="./brained.png"/>
+          </a>
+          </div>
+
           <div className="home-btns">
             <a className="btn-1" href="./contact">
               Contact ME
