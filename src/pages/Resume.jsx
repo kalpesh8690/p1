@@ -1,52 +1,120 @@
-import React, { useState } from "react";
-import "../css/resume.css";
-import { Cake,LinkedIn,Mail,Phone,Mouse,Map } from "@mui/icons-material";
-import data from "../resume_data.json"
+
+import React from "react";
+import "animate.css/animate.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./Resume.css";
+import resumeData from "../resume_data.json";
 
 function Resume() {
+  const { basics, sections } = resumeData;
+
   return (
-    <div className="main-cv">
-      <div className="resumeWrraper">
-        <div className="resume">
-            <div className="main-detailWrraper">
-              <div className="profile-picWrraper">
-                  <div className="profile-pic">
-                    <img className="img-set" src='/01.jpeg'/>
-                  </div>
-              </div>
-              <div className="person-name-wrraper">
-                  <div className="person-name-inner">
-                    <h1 className="person-name">
-                      {data.basics.name}
-                    </h1>
-                    <h3 className="person-name-headline">
-                      {data.basics.headline}
-                    </h3>
-                  </div>
-              </div>
-              <div className="contact-info-wrraper">
-                <div className="basic-contact-info">
-                   <a href={data.basics.website} className="website"><Mouse/>{data.basics.website}</a>
-                   <a href={data.basics.email} className="email"><Mail/>{data.basics.email}</a>
-                   <p className="birthday"><Cake/>{data.basics.birthdate}</p>
-                   <a href={data.basics.phone} className="mobile"><Phone/>{data.basics.phone}</a>
-                   <div className="location">
-                      <p className="address"><Map/>{data.basics.location.address},{data.basics.location.city},{data.basics.location.country},{data.basics.location.postalCode}</p>
-                   </div>
-                </div>
-              </div>
-              <div className="skillWrraper">
-                <div className="headingOfskill">
-                  <p>skill</p>
-                  <span></span>
-                </div>
-              </div>
+    <div className="resume">
+      <header className="animate__animated animate__fadeIn">
+        <h1 className="animate__animated animate__bounce">{basics.name}</h1>
+        <p>{basics.headline}</p>
+      </header>
+      <section className="animate__animated animate__fadeInUp">
+        <h2>Skills</h2>
+        <ul className="list-group">
+          {sections.skills.items.map((item) => (
+            <li className="list-group-item" key={item.id}>
+              {item.name}
+            </li>
+          ))}
+        </ul>
+      </section>
+      <section className="animate__animated animate__fadeInUp">
+        <h2>Experience</h2>
+        {sections.work.items.map((item) => (
+          <div className="card" key={item.id}>
+            <div className="card-body">
+              <h3 className="card-title">{item.position}</h3>
+              <p className="card-text">{item.company}</p>
+              <p className="card-text">
+                {item.startDate} - {item.endDate}
+              </p>
+              <ul>
+                {item.highlights.map((highlight, index) => (
+                  <li key={index}>{highlight}</li>
+                ))}
+              </ul>
             </div>
-            <div className="detailWrraper">
- 
+          </div>
+        ))}
+      </section>
+      <section className="animate__animated animate__fadeInUp">
+        <h2>Education</h2>
+        {sections.education.items.map((item) => (
+          <div className="card" key={item.id}>
+            <div className="card-body">
+              <h3 className="card-title">{item.degree}</h3>
+              <p className="card-text">{item.institution}</p>
+              <p className="card-text">
+                {item.startDate} - {item.endDate}
+              </p>
             </div>
-        </div>
-      </div>
+          </div>
+        ))}
+      </section>
+      <section className="animate__animated animate__fadeInUp">
+        <h2>Projects</h2>
+        {sections.projects.items.map((item) => (
+          <div className="card" key={item.id}>
+            <div className="card-body">
+              <h3 className="card-title">{item.name}</h3>
+              <p className="card-text">{item.summary}</p>
+              <p className="card-text">
+                {item.date.start} - {item.date.end}
+              </p>
+              <p className="card-text">{item.description}</p>
+            </div>
+          </div>
+        ))}
+      </section>
+      <section className="animate__animated animate__fadeInUp">
+        <h2>Skills</h2>
+        <ul className="list-group">
+          {sections.skills.items.map((item) => (
+            <li className="list-group-item" key={item.id}>
+              {item.name}
+            </li>
+          ))}
+        </ul>
+      </section>
+      <section className="animate__animated animate__fadeInUp">
+        <h2>Interests</h2>
+        {sections.interests.items.map((item) => (
+          <div className="card" key={item.id}>
+            <div className="card-body">
+              <p className="card-text">{item.name}</p>
+            </div>
+          </div>
+        ))}
+      </section>
+      <section className="animate__animated animate__fadeInUp">
+        <h2>Languages</h2>
+        {sections.languages.items.map((item) => (
+          <div className="card" key={item.id}>
+            <div className="card-body">
+              <h3 className="card-title">{item.name}</h3>
+              <p className="card-text">Level: {item.level}</p>
+            </div>
+          </div>
+        ))}
+      </section>
+      <section className="animate__animated animate__fadeInUp">
+        <h2>Certifications</h2>
+        {sections.certifications.items.map((item) => (
+          <div className="card" key={item.id}>
+            <div className="card-body">
+              <h3 className="card-title">{item.name}</h3>
+              <p className="card-text">Issuer: {item.issuer}</p>
+              <p className="card-text">Date: {item.date}</p>
+            </div>
+          </div>
+        ))}
+      </section>
     </div>
   );
 }

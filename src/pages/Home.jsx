@@ -1,14 +1,17 @@
+
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "animate.css/animate.min.css";
 import "../css/home.css";
 
 function Home() {
-
   const navigate = useNavigate();
-  const Cv = () => {
+
+  // Function to navigate to the CV page
+  const goToCv = () => {
     navigate("/cv");
   };
+
   return (
     <>
       <div className="home-body">
@@ -22,12 +25,11 @@ function Home() {
             </h1>
           </div>
           <div className="job-positon">
-          <p className="p-desc2">MERN STACK DEVELOPER AT</p>
-          <a href="https://brained.app/">
-            <img className="brained-logo" src="./brained.png"/>
-          </a>
+            <p className="p-desc2">MERN STACK DEVELOPER AT</p>
+            <a href="https://brained.app/">
+              <img className="brained-logo" src="./brained.png" alt="Brained Logo" />
+            </a>
           </div>
-
           <div className="home-btns">
             <a className="btn-1" href="./contact">
               Contact ME
@@ -35,7 +37,7 @@ function Home() {
             <input
               className="btn-2"
               type="button"
-              onClick={() => Cv()}
+              onClick={goToCv}
               value="My Cv"
             />
           </div>
@@ -44,7 +46,6 @@ function Home() {
           <img className="my-img" alt="kalpesh-pic" src="mypic.png"></img>
         </div>
       </div>
-
       <div className="about-us-main">
         <div className="about-us-img">
           <img className="about-img" alt="about-pic" src="about-us.png"></img>
