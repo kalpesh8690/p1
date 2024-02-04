@@ -7,7 +7,7 @@
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@makotot/ghostui": "^2.0.0",
-    "@mui/icons-material": "^5.8.4",
+    "@mui/icons-material": "^5.15.4",
     "@mui/material": "^5.10.1",
     "@ramonak/react-progress-bar": "^5.0.2",
     "@reduxjs/toolkit": "^1.8.5",
