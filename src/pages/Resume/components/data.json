@@ -1,0 +1,72 @@
+{
+    "name": "Kalpesh Chauhan",
+    "profession": "Full Stack Developer",
+    "location": "Palitana",
+    "phone": "+918690361133",
+    "personal_information": {
+      "address": "01 Ramnagar, Gheti, Palitana, 364270",
+      "date_of_birth": "10/05/2000",
+      "place_of_birth": "Gheti",
+      "nationality": "Indian",
+      "hobbies": [
+        "Photography",
+        "Programming and coding projects"
+      ]
+    },
+    "social_profiles": [
+        {"platform":"Instagram","title":"mrk._09","url":"https://instagram.com/mrk._09?utm_medium=copy_link"},
+        {"platform":"Linkedin","title":"Kalpesh Chauhan","url":"https://www.linkedin.com/in/kalpesh-chauhan-07632b194"},
+         {"platform":"Portfolio","title":"Kalpesh Chauhan","url":"https://kalpeshchauhan.vercel.app/"}
+    ],
+    "languages": ["Gujarati", "Hindi", "English"],
+    "skills":[
+        {"type":"Frontend","set":["React Js", "Vue Js", "Element UI", "Taiwind CSS", "JavaScript", "HTML", "CSS"]},
+        {"type":"Backend","set":["Node js", "Express js", "Python"]},
+        {"type":"Database","set":["MongoDB", "SQL"]}
+    ],
+    "work_experience": [
+      {
+        "duration": "November 2022 – May 2024",
+        "position": "MERN Stack Developer",
+        "company": "AIAB(Brained)",
+        "location": "Mumbai",
+        "description": "Developed a full stack web application using modern technologies such as React, Node.js, and MongoDB. Collaborated with cross-functional teams to design and implement scalable and efficient web solutions. Enhanced application performance and user experience through continuous testing and optimization. Successfully integrated third-party APIs to expand application functionality and streamline operations"
+      }
+    ],
+    "education": [
+      {
+        "duration": "June 2019 – March 2022",
+        "institution": "SMT KS KAPASI BCA COLLEGE PALITANA",
+        "location": "Palitana,bhavnagar,gujarat",
+        "degree": "BCA"
+      }
+    ],
+    "courses": [
+      {
+        "duration": "August 2022 – August 2022",
+        "course": "React+Redux",
+        "provider": "Sololearn"
+      }
+    ],
+    "projects": [
+      {
+        "name": "Hotel Management System",
+        "duration": "December 2021 – March 2022",
+        "description": "Developed a Hotel Management System as my final BCA project, utilizing the MERN stack. It includes features for single and multiple room bookings, with my focus as the front-end developer."
+      },
+      {
+        "name": "Portfolio",
+        "location": "Bhavnagar",
+        "duration": "September 2022 – January 2023",
+        "description": "This project is about me and this project is a portfolio website. In which I have added my web development, my education, my certificate, my skills. This project is built in React JS, HTML, CSS, JavaScript and Material UI."
+      },
+      {
+        "name": "Cloud Storage System",
+        "duration": "February 2024",
+        "description": "Developed a MEVN stack Cloud Storage System utilizing MongoDB for flexible and scalable data storage. Designed responsive user interfaces with Vue.js to ensure a seamless and efficient file management experience in the cloud. Implemented robust authentication and authorization mechanisms to secure user data. Optimized system performance to handle large volumes of data and concurrent user access effectively."
+      }
+    ],
+    "customSection": [
+      ]
+  }
+  

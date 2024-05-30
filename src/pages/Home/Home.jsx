@@ -2,11 +2,15 @@
 
 import React from "react";
 import Banner from "./components/Banner";
+import About from "./components/AboutMySelf";
+import Skill from "./components/Skills"
 
 const Home = () => {
   return (
     <>
-    <Banner/>
+      <Banner />
+      <About />
+      <Skill/>
     </>
   );
 };
